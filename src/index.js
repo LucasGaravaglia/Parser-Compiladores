@@ -95,7 +95,7 @@ function scanner(path) {
         for (let i = 0; i < tokens.length; i++) {
           if (automaton(tokens[i].states).execute(data[j])) {
             valid = true;
-            symbolTable.push(tokens[i].name);
+            symbolTable.push({symbol: data[j],token:tokens[i].name});
             break;
           }
         }
@@ -103,7 +103,7 @@ function scanner(path) {
           lexicalError += `Erro na linha [${line + 1}], '${
             data[j]
           }' ${automaton().getError()}\n`; //Identifica o erro, se houve, do processamento do token
-          symbolTable.push("error");
+          symbolTable.push({symbol: data[j],token:"error"});
         }
         valid = false;
       }
@@ -115,11 +115,20 @@ function scanner(path) {
     console.log(err);
   }
 }
-const pars = new parser();
 
+const pars = new parser();
 const path = readline.question("Digite o caminho do arquivo: ");
 console.clear();
 scanner(path);
-console.table(symbolTable);
-pars.process(symbolTable);
+let erro = false;
+let tokenList = [];
+symbolTable.map((pos) => {
+  tokenList.push(pos.token);
+  if (pos.token == "error") erro = true;
+})
+if (!erro) {
+  pars.process(tokenList);
+} else {
+  console.log("Analise sintática nao iniciada devido aos erros léxicos.");
+}
 readline.question();

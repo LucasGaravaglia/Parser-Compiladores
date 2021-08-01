@@ -8,16 +8,20 @@ class parser{
       ["tokenReturn","<EXP>", "tokenEndLine","<STA>"],
       ["tokenEndLine","<STA>"],
       ["tokenIdentifier", "<K>", "tokenEndLine","<STA>"],
-      ["tokenDataType","tokenIdentifier", "<T>", "tokenEndLine","<STA>"],
-      ["tokenUnsigned", "tokenDataType","tokenIdentifier", "<T>", "tokenEndLine","<STA>"],
-        ["tokenTypeDef", "tokenDataType", "tokenIdentifier", "tokenEndLine", "<STA>"],
+      ["tokenDataType","tokenIdentifier", "<L>","<STA>"],
+      ["tokenUnsigned", "tokenDataType","tokenIdentifier", "<L>","<STA>"],
+      ["tokenTypeDef", "tokenDataType", "tokenIdentifier", "tokenEndLine", "<STA>"],
       ["$"],
       
     ],
     "<T>": [
       ["tokenAssignments", "<EXP>"],
       ["tokenSeparator", "tokenIdentifier", "<T>"],
-    ],
+      ],
+    "<L>": [
+        ["tokenStartFunction", "<P>", "tokenFinalFunction"],
+        ["<T>","tokenEndLine"],
+      ],
     "<EXP>": [
       ["tokenIdentifier", "<S>"],
       ["tokenStartFunction", "<EXP>", "tokenFinalFunction"],
@@ -56,14 +60,14 @@ class parser{
     this.pilha = ["$"];
   }
   
-  stackUp(vet){
+  stackUp(vet) {
     for (let i = vet.length-1; i >= 0; i--){
       this.pilha.push(vet[i]);
     }
   }
   process(tokenList) {
     let message = "";
-    this.pilha.push("<F>");
+    this.pilha.push("<STA>");
     let state;
     while (tokenList[0] != undefined) {
       state = this.pilha[this.pilha.length - 1];
@@ -72,6 +76,10 @@ class parser{
         for (let i = 0; i < this.syntacticTable[state].length; i++) {
           if (this.syntacticTable[state][i][0] == tokenList[0]) {
             this.stackUp(this.syntacticTable[state][i])
+            break;
+          } else if ((/<[a-z]*>/i).test(this.syntacticTable[state][i][0])) {
+            this.stackUp(this.syntacticTable[state][i])
+            break;
           }
         }
       } else {

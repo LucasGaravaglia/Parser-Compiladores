@@ -4,13 +4,16 @@
             | tokenReturn<EXP>tokenEndLine<STA>
             | tokenEndLine<STA>
             | tokenIdentifier<K>tokenEndLine<STA>
-            | tokenDataType tokenIdentifier<T>tokenEndLine<STA>
-            | tokenUnsigned tokenDataType tokenIdentifier<T>tokenEndLine<STA>
+            | tokenDataType tokenIdentifier <L> <STA>
+            | tokenUnsigned tokenDataType tokenIdentifier <L> <STA>
             | tokenTypeDef tokenDataType tokenIdentifier tokenEndLine<STA>
             | $
 
 <T> ::= tokenAssignments<EXP>
         | tokenSeparator tokenIdentifier<T>
+
+<L> ::= tokenStartFunction<P>tokenFinalFunction
+        |<T>tokenEndLine
 
 <EXP> ::= tokenIdentifier<S>
           | tokenStartFunction <EXP> tokenFinalFunction 
@@ -25,9 +28,6 @@
 <S> ::= tokenOperator<EXP>
         | tokenExpression<EXP>
         | $
-
-<F> ::= tokenDataType tokenIdentifier tokenStartFunction<P>tokenFinalFunction<STA>
-        | tokenUnsigned tokenDataType tokenIdentifier tokenStartFunction<P>tokenFinalFunction<STA>
 
 <P> ::= tokenDataType tokenIdentifier<Z>
         | $
