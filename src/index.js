@@ -21,13 +21,12 @@ const {
 const {parser} = require("./parser")
 
 
+var symbolTable = [];
 
 /**
  * Objeto que simula o funcionamento de um automato.
  * @param {states[]} states Vetor de estados ja instanciados.
  */
-
-var symbolTable = [];
 const automaton = (states) => {
   const indexOf = (name) => {
     for (var i = 0; i < states.length; i++) {
