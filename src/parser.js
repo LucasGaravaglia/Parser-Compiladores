@@ -1,3 +1,5 @@
+const { writeFile } = require("./file");
+
 /**
  * Classe que simula o analisador sintático.
  */
@@ -65,7 +67,7 @@ class parser{
       ["tokenTypeDef", "tokenDataType","tokenIdentifier","tokenEndLine"],
     ]
     }
-    this.pilha = ["$"];
+    this.pilha = [];
   }
   /**
    * Recebe um vetor de token e os empilha para derivações futuras.
@@ -81,11 +83,29 @@ class parser{
    * Método responsável pela logica do analisador sintático.
    * @param {Array} tokenList Vetor de token que sera analisado pelo analisador sintático.
    */
-  process(tokenList) {
+  process(tokenList,path) {
     let message = "";
     this.pilha.push("<STA>");
     let state;
-    while (tokenList[0] != undefined) {
+    let temp = [];
+    let file = "";
+    let erro=0;
+    while (tokenList[0] != undefined || this.pilha[0] != undefined) {
+      temp = [];
+      tokenList.map((item) => {
+        temp.unshift(item)
+      })
+      // tempFileOutPut ={ Lista: temp, pilha: this.pilha };
+      file = `${file} Lista de símbolos :`
+      temp.map((item) => {
+        file = `${file} ${item}`
+      })
+      file = `${file} \n`
+      file = `${file} Pilha             :`
+      this.pilha.map((item) => {
+        file = `${file} ${item}`
+      })
+      file = `${file} \n\n`
       state = this.pilha[this.pilha.length - 1];
       this.pilha.pop();
       if ((/<[a-z]*>/i).test(state)) {
@@ -99,20 +119,22 @@ class parser{
           }
         }
       } else {
-        if (state == "$") {
-        } else if (state != tokenList[0]) {
-          message = "Erro na analise sintática";
+        if (state != tokenList[0]) {
+          message = "Erros na analise sintática";
           break;
         }else{
           tokenList.shift();
         }
       }
     }
+
     if (message) {
       console.log(message)
     } else {
       console.log("Sem erros sintáticos.")
     }
+    path = `arvore_${path}`
+    writeFile(path, file);
   }
 }
 module.exports = { parser };

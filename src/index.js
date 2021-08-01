@@ -15,7 +15,8 @@ const {
   expressionsClass,
   operatorClass,
   endLineClass,
-  separatorClass
+  separatorClass,
+  typeDefClass
 } = require("./tokenClass");
 const {parser} = require("./parser")
 
@@ -63,21 +64,22 @@ const automaton = (states) => {
  * Lista das classes de tokens
  */
 const tokens = [
-          startBlockFunctionClass(),
-  /** 0*/ FinalBlockFunctionClass(),
-          separatorClass(),
-  /** 1*/ startFunctionMarkerClass(),
-          finalFunctionMarkerClass(),
-  /** 2*/ loopClass(),
-  /** 3*/ functionReturnClass(),
-  /** 4*/ functionConditionalClass(),
-  /** 5*/ integerTypeClass(),
-  /** 6*/ assignmentClass(),
-  /** 7*/ expressionsClass(),
-  /** 8*/ operatorClass(),
-  /** 9*/ endLineClass(),
-  /** 10*/ numberClass(),
-  /** 11*/ identifierClass(),
+  startBlockFunctionClass(),
+  FinalBlockFunctionClass(),
+  separatorClass(),
+  startFunctionMarkerClass(),
+  finalFunctionMarkerClass(),
+  loopClass(),
+  typeDefClass(),
+  functionReturnClass(),
+  functionConditionalClass(),
+  integerTypeClass(),
+  assignmentClass(),
+  expressionsClass(),
+  operatorClass(),
+  endLineClass(),
+  numberClass(),
+  identifierClass(),
 ];
 
 function scanner(path) {
@@ -124,5 +126,6 @@ let tokenList = [];
 symbolTable.map((pos) => {
   tokenList.push(pos.token);
 })
-pars.process(tokenList);
+tokenList.push("$");
+pars.process(tokenList,path);
 readline.question();

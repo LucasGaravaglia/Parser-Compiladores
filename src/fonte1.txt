@@ -1,3 +1,4 @@
+typedef int teste;
 int main(){
     int _var = 1;
     while (_var != 0){

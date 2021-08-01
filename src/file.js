@@ -14,6 +14,15 @@ function readFile(path) {
 
 /**
  *
+ * @param {String} path Caminho do arquivo que será lido
+ * @returns Vetor de string com as linhas
+ */
+function writeFile(path,output) {
+  return fs.writeFileSync(path, output);
+}
+
+/**
+ *
  * @param {String[]} data Vetor de string que será separado em tokens
  * @returns Vetor de tokens
  */
@@ -61,42 +70,48 @@ function process(data) {
     } else if (data[j] == ";") {
       if (buffer.length > 0) {
         tokens.push(buffer);
-        buffer = data[j];
+        tokens.push(data[j]);
+        buffer = ""
       } else {
         buffer = data[j];
       }
     } else if (data[j] == "+") {
       if (buffer.length > 0) {
         tokens.push(buffer);
-        buffer = data[j];
+        tokens.push(data[j]);
+        buffer = ""
       } else {
         buffer = data[j];
       }
     } else if (data[j] == "-") {
       if (buffer.length > 0) {
         tokens.push(buffer);
-        buffer = data[j];
+        tokens.push(data[j]);
+        buffer = ""
       } else {
         buffer = data[j];
       }
     } else if (data[j] == "*") {
       if (buffer.length > 0) {
         tokens.push(buffer);
-        buffer = data[j];
+        tokens.push(data[j]);
+        buffer = ""
       } else {
         buffer = data[j];
       }
     } else if (data[j] == "/") {
       if (buffer.length > 0) {
         tokens.push(buffer);
-        buffer = data[j];
+        tokens.push(data[j]);
+        buffer = ""
       } else {
         buffer = data[j];
       }
     } else if (data[j] == "%") {
       if (buffer.length > 0) {
         tokens.push(buffer);
-        buffer = data[j];
+        tokens.push(data[j]);
+        buffer = ""
       } else {
         buffer = data[j];
       }
@@ -148,4 +163,4 @@ function process(data) {
   return tokens;
 }
 
-module.exports = { readFile, process };
+module.exports = { readFile, process,writeFile };

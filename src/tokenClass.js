@@ -238,7 +238,33 @@ const endLineClass = () => {
   return { states, name };
 };
 
+/**
+ * Objeto que contém os estados da classe de token de laço de repetição
+ */
+const typeDefClass = () => {
+  let states = [
+    new state("q0", false),
+    new state("q1", false),
+    new state("q2", false),
+    new state("q3", false),
+    new state("q4", false),
+    new state("q5", false),
+    new state("q6", false),
+    new state("q7", true),
+  ];
+  const name = "tokenTypeDef";
+  states[0].newTransition("t", "q1", "q0");
+  states[1].newTransition("y", "q2", "q1");
+  states[2].newTransition("p", "q3", "q2");
+  states[3].newTransition("e", "q4", "q3");
+  states[4].newTransition("d", "q5", "q4");
+  states[5].newTransition("e", "q6", "q5");
+  states[6].newTransition("f", "q7", "q6");
+  return { states, name };
+};
+
 module.exports = {
+  typeDefClass,
   startBlockFunctionClass,
   FinalBlockFunctionClass,
   startFunctionMarkerClass,

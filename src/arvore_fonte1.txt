@@ -1,0 +1,165 @@
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction tokenWhile tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenEndLine tokenIdentifier tokenDataType tokenTypeDef 
+ Pilha             : <STA> 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction tokenWhile tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenEndLine tokenIdentifier tokenDataType tokenTypeDef 
+ Pilha             : <STA> tokenEndLine tokenIdentifier tokenDataType tokenTypeDef 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction tokenWhile tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenEndLine tokenIdentifier tokenDataType 
+ Pilha             : <STA> tokenEndLine tokenIdentifier tokenDataType 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction tokenWhile tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenEndLine tokenIdentifier 
+ Pilha             : <STA> tokenEndLine tokenIdentifier 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction tokenWhile tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType tokenEndLine 
+ Pilha             : <STA> tokenEndLine 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction tokenWhile tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType 
+ Pilha             : <STA> 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction tokenWhile tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier tokenDataType 
+ Pilha             : <STA> <L> tokenIdentifier tokenDataType 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction tokenWhile tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction tokenIdentifier 
+ Pilha             : <STA> <L> tokenIdentifier 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction tokenWhile tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction 
+ Pilha             : <STA> <L> 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction tokenWhile tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction tokenStartFunction 
+ Pilha             : <STA> tokenFinalFunction <P> tokenStartFunction 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction tokenWhile tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction 
+ Pilha             : <STA> tokenFinalFunction <P> 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction tokenWhile tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction tokenFinalFunction 
+ Pilha             : <STA> tokenFinalFunction 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction tokenWhile tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction 
+ Pilha             : <STA> 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction tokenWhile tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType tokenStartBlockFunction 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenStartBlockFunction 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction tokenWhile tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction tokenWhile tokenEndLine tokenNumber tokenAssignments tokenIdentifier tokenDataType 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> <L> tokenIdentifier tokenDataType 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction tokenWhile tokenEndLine tokenNumber tokenAssignments tokenIdentifier 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> <L> tokenIdentifier 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction tokenWhile tokenEndLine tokenNumber tokenAssignments 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> <L> 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction tokenWhile tokenEndLine tokenNumber tokenAssignments 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <T> 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction tokenWhile tokenEndLine tokenNumber tokenAssignments 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <EXP> tokenAssignments 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction tokenWhile tokenEndLine tokenNumber 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <EXP> 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction tokenWhile tokenEndLine tokenNumber 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <S> tokenNumber 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction tokenWhile tokenEndLine 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <S> 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction tokenWhile tokenEndLine 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction tokenWhile 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction tokenWhile 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalFunction <EXP> tokenStartFunction tokenWhile 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier tokenStartFunction 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalFunction <EXP> tokenStartFunction 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalFunction <EXP> 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression tokenIdentifier 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalFunction <S> tokenIdentifier 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalFunction <S> 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber tokenExpression 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalFunction <EXP> tokenExpression 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalFunction <EXP> 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction tokenNumber 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalFunction <S> tokenNumber 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalFunction <S> 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction tokenFinalFunction 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalFunction 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenStartBlockFunction 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalBlockFunction <STA> tokenStartBlockFunction 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalBlockFunction <STA> 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalBlockFunction <STA> tokenEndLine <EXP> tokenReturn 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalBlockFunction <STA> tokenEndLine <EXP> 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine tokenNumber 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalBlockFunction <STA> tokenEndLine <S> tokenNumber 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalBlockFunction <STA> tokenEndLine <S> 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction tokenEndLine 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalBlockFunction <STA> tokenEndLine 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalBlockFunction <STA> 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn tokenFinalBlockFunction 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenFinalBlockFunction 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber tokenReturn 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <EXP> tokenReturn 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <EXP> 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine tokenNumber 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <S> tokenNumber 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine <S> 
+
+ Lista de símbolos : $ tokenFinalBlockFunction tokenEndLine 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> tokenEndLine 
+
+ Lista de símbolos : $ tokenFinalBlockFunction 
+ Pilha             : <STA> tokenFinalBlockFunction <STA> 
+
+ Lista de símbolos : $ tokenFinalBlockFunction 
+ Pilha             : <STA> tokenFinalBlockFunction 
+
+ Lista de símbolos : $ 
+ Pilha             : <STA> 
+
+ Lista de símbolos : $ 
+ Pilha             : $ 
+
