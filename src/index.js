@@ -120,15 +120,9 @@ const pars = new parser();
 const path = readline.question("Digite o caminho do arquivo: ");
 console.clear();
 scanner(path);
-let erro = false;
 let tokenList = [];
 symbolTable.map((pos) => {
   tokenList.push(pos.token);
-  if (pos.token == "error") erro = true;
 })
-if (!erro) {
-  pars.process(tokenList);
-} else {
-  console.log("Analise sintática nao iniciada devido aos erros léxicos.");
-}
+pars.process(tokenList);
 readline.question();

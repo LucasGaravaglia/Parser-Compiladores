@@ -1,4 +1,12 @@
+/**
+ * Classe que simula o analisador sintático.
+ */
 class parser{
+  /**
+   * Construtor da classe parser
+   * @param {Object} syntacticTable Tabela sintática
+   * @param {Array} pilha pilha para a analise.
+   */
   constructor() {
     this.syntacticTable = {
     "<STA>": [
@@ -59,12 +67,20 @@ class parser{
     }
     this.pilha = ["$"];
   }
-  
+  /**
+   * Recebe um vetor de token e os empilha para derivações futuras.
+   * @param {Array} vet Vetor de token para a derivação da cadeia.
+   */
   stackUp(vet) {
     for (let i = vet.length-1; i >= 0; i--){
       this.pilha.push(vet[i]);
     }
   }
+
+  /**
+   * Método responsável pela logica do analisador sintático.
+   * @param {Array} tokenList Vetor de token que sera analisado pelo analisador sintático.
+   */
   process(tokenList) {
     let message = "";
     this.pilha.push("<STA>");
