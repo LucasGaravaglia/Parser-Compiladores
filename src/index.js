@@ -17,6 +17,7 @@ const {
   endLineClass,
   separatorClass
 } = require("./tokenClass");
+const {parser} = require("./parser")
 
 
 
@@ -94,7 +95,7 @@ function scanner(path) {
         for (let i = 0; i < tokens.length; i++) {
           if (automaton(tokens[i].states).execute(data[j])) {
             valid = true;
-            symbolTable.push({ token: data[j], name: tokens[i].name });
+            symbolTable.push(tokens[i].name);
             break;
           }
         }
@@ -102,7 +103,7 @@ function scanner(path) {
           lexicalError += `Erro na linha [${line + 1}], '${
             data[j]
           }' ${automaton().getError()}\n`; //Identifica o erro, se houve, do processamento do token
-          symbolTable.push({ token: data[j], name: "error" });
+          symbolTable.push("error");
         }
         valid = false;
       }
@@ -114,11 +115,11 @@ function scanner(path) {
     console.log(err);
   }
 }
-
-function parser() {}
+const pars = new parser();
 
 const path = readline.question("Digite o caminho do arquivo: ");
 console.clear();
 scanner(path);
 console.table(symbolTable);
+pars.process(symbolTable);
 readline.question();

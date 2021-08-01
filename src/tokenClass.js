@@ -1,4 +1,4 @@
-const { state, transition } = require("./automato");
+const { state } = require("./automato");
 
 /**
  * Objeto que contém os estados da classe de token de marcação de inicio de função
