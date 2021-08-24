@@ -1,7 +1,0 @@
-int main() {
-    int _v@ar = 1;
-    while(_var != 0) {
-        return 1,9;
-    }
-    return 0;
-}

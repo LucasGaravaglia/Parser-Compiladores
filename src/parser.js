@@ -16,7 +16,6 @@ class parser{
       ["tokenStartBlockFunction", "<STA>", "tokenFinalBlockFunction","<STA>"],
       ["tokenWhile", "tokenStartFunction", "<EXP>", "tokenFinalFunction", "<STA>"],
       ["tokenReturn","<EXP>", "tokenEndLine","<STA>"],
-      ["tokenEndLine","<STA>"],
       ["tokenIdentifier", "<K>", "tokenEndLine","<STA>"],
       ["tokenDataType","tokenIdentifier", "<L>","<STA>"],
       ["tokenUnsigned", "tokenDataType","tokenIdentifier", "<L>","<STA>"],
